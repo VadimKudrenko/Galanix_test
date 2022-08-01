@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.flags-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flag {
+  width: 300px;
+  height: 150px;
+  margin: 10px 0;
+}
+
+/* Ukraine Flag */
+
+.flag__ukraine--blue {
+  height: 50%;
+  background-color: blue;
+}
+
+.flag__ukraine--yellow {
+  height: 50%;
+  background-color: yellow;
+}
+
+/* Japan Flag */
+
+.flag__japan {
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flag__japan--white {
+  background-color: #fff;
+}
+
+.flag__japan--red-circle {
+  background-color: red;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+/* Island Flag */
+
+.flag__island {
+  background-color: blue;
+  position: relative;
+}
+
+ /* white lines in flag*/
+.flag__island::after {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 25%;
+  background-color: #fff;
+}
+.flag__island::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 30%;
+  transform: translateX(-50%);
+  width: 15%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.flag__island-red {
+  background-color: red;
+  z-index: 10;
+}
+
+.flag__island-red--horizontal {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 13%;
+}
+
+.flag__island-red--vertical {
+  position: absolute;
+  top: 0;
+  left: 26%;
+  width: 8%;
+  height: 100%;
+}
+
+
+/* Czech Flag  */
+.flag__czech {
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.flag__czech--triangle-blue{
+  border-top: 75px solid transparent;
+	border-left: 100px solid blue;
+	border-bottom: 75px solid transparent;
+  width: 0;
+	height: 0;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.flag__czech--white {
+  height: 50%;
+  background-color: #fff;
+}
+.flag__czech--red {
+  height: 50%;
+  background-color: red;
+}
